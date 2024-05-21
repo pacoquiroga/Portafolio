@@ -115,8 +115,8 @@ html {
         border: 2px solid var(--navy-blue);
         border-radius: 5%;
         padding: 20px;
-        width: 80%;
-        right: -1%;
+        width: 70%;
+        right: 2%;
     }
 
     .nav.show {
