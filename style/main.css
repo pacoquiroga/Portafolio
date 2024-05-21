@@ -107,7 +107,7 @@ html {
 
     .nav ul {
         position: fixed;
-        height: 45vh;
+        height: auto;
         background-color: var(--light-beige);
         top: 90px;
         text-align: center;
