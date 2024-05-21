@@ -1,3 +1,4 @@
+
 :root {
     --white: #FFFFFF;
     --white-beige: #FEFAF6;
@@ -5,7 +6,6 @@
     --beige: #DAC0A3;
     --black: #141414;
     --navy-blue: #102C57;
-
 }
 
 html {
@@ -30,12 +30,13 @@ html {
 }
 
 /* HEADER */
-.header {
+
+.header{
     background-color: var(--light-beige);
-    padding: .9rem 3rem;
+    padding: 0rem 3rem 3rem 3rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     position: fixed;
     width: 100%;
     top: 0;
@@ -44,14 +45,16 @@ html {
     transition: .5s;
 }
 
+
+
 .header .logo {
     width: 8rem;
 }
 
-.header .nav {
+.header .nav ul {
     display: flex;
     gap: 1.5rem;
-    margin-right: 2rem;
+    list-style: none;
 }
 
 .nav_link {
@@ -63,10 +66,81 @@ html {
     padding: 1rem;
 }
 
-.nav_link:hover {
+.nav a:hover, nav ul li a.active{
     color: var(--beige);
     background-color: var(--navy-blue);
     transition: all .4s;
+}
+
+
+.toggle-nav-button h1{
+    font-size: 30px;
+    color: var(--navy-blue);
+    float: right;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: none;
+    margin-right: 3rem;
+}
+
+.toggle-nav-button h1:hover{
+    font-size: 35px;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 780px) {
+    .toggle-nav-button h1 {
+        display: block;
+        float: right;
+        margin-top: 3%;
+    }
+
+    .nav{
+        display: none;
+        transition: all .5s;
+    }
+
+    .nav ul {
+        position: fixed;
+        height: 45vh;
+        background-color: var(--light-beige);
+        top: 90px;
+        text-align: center;
+        flex-direction: column;
+        border: 2px solid var(--navy-blue);
+        border-radius: 5%;
+        padding: 20px;
+        width: 80%;
+        right: -1%;
+    }
+
+    .nav.show {
+        display: block; 
+        
+    }
+
+    li {
+        display: block;
+        margin: 0;
+        line-height: 30px;
+    }
+
+    .nav a {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    li a:hover,
+    li a.active {
+        background-color: var(--navy-blue);
+        color: var(--beige);
+        width: 100%;
+    }
 }
 
 
@@ -146,6 +220,7 @@ html {
     height: 4rem;
     transition: .4s;
 }
+
 
 /* ABOUT */
 .about {

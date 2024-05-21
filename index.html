@@ -12,15 +12,22 @@
 
 <body>
     <header class="header">
-        <img src="./img/FQ_logoC.png" alt="Logo" class="logo">
-        <nav class="nav">
-            <a href="#home" class="nav_link">Inicio</a>
-            <a href="#about" class="nav_link">Acerca de mi</a>
-            <a href="#formacion" class="nav_link">Formación</a>
-            <a href="#habilidades" class="nav_link">Habilidades</a>
-            <a href="#proyectos" class="nav_link">Proyectos</a>
-            <a href="#contacto" class="nav_link">Contacto</a>
-        </nav>
+            <img src="./img/FQ_logoC.png" alt="Logo" class="logo">
+            <input type="checkbox" id="check">
+
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#home" class="nav_link">Inicio</a></li>
+                    <li><a href="#about" class="nav_link">Acerca de mi</a></li>
+                    <li><a href="#formacion" class="nav_link">Formación</a></li>
+                    <li><a href="#habilidades" class="nav_link">Habilidades</a></li>
+                    <li><a href="#proyectos" class="nav_link">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav_link">Contacto</a></li>
+                </ul>
+            </nav>
+            <label for="check" class="toggle-nav-button" id="menu">
+                <h1>☰</h1>
+            </label>
     </header>
 
     <main>
@@ -129,7 +136,7 @@
                     <img src="./img/icon-html.png" alt="HTML">
                     <p>HTML 5</p>
                 </div>
-                
+
                 <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
                     <img src="./img/icon-css.png" alt="CSS">
                     <p>CSS 3</p>
@@ -156,7 +163,7 @@
                     <img src="./img/java_icon.png" alt="Git">
                     <p>JAVA</p>
                 </div>
-                
+
                 <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
                     <img src="./img/icon-github-hab.png" alt="GitHub">
                     <p>Github</p>
@@ -256,7 +263,7 @@
         </div>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <script src="./js/script.js"></script>        
+        <script src="./js/script.js"></script>
 
     </main>
 </body>
